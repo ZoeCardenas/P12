@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+   }
+   header, footer {
+   color: purple;
+   background-color: #aeaca8;
+   width: 100%;
+   height: 50px;
+   }
+   header{
+    display: inline-flex;
+    font-family: 'Rambla', sans-serif;
+    font-size: 1.1em;
+   }
+   .logo{
+    color: white;
+    font-family: 'Rambla', sans-serif;
+    font-size: 1.1em;
+   }
+   footer{
+    text-align: center;
+   }
+   button{
+    font-size: 1em;
+    width: auto;
+    height: 40px;
+    background-color:orange;
+    border-radius: 5px;
+    margin: 5px;
+   }
+   .problema{
+    grid-area: a1;
+    background-color: #094293;
+    color: gold;
+    border-radius: 10px;
+    margin: 10px;
+   }
+   .esquemaProblema{
+    grid-area: a2;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 10px;
+   }
+   .imgProblema{
+    border-radius:10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+   }
+   .datos{
+    grid-area: a3;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px;
+   }
+   .formulas{
+    grid-area: a4;
+    background-color: orangered;
+    border-radius: 10px;
+    margin: 10px;
+   }
+   .calculos{
+    grid-area: a5;
+    background-color: indigo;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+   }
+   .resultado{
+    grid-area: a6;
+    background-color: mediumvioletred;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+   }
+   #contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "a1 a1 a2 a2"
+    "a3 a3 a4 a4"
+    "a5 a5 a6 a6";
+    width: 100%;
+   height: 100
+   
